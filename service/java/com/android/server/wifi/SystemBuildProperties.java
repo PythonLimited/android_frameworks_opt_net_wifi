@@ -21,16 +21,16 @@ import android.os.Build;
 class SystemBuildProperties implements BuildProperties {
     @Override
     public boolean isEngBuild() {
-        return Build.TYPE.equals("eng");
+        return true;
     }
 
     @Override
     public boolean isUserdebugBuild() {
-        return Build.TYPE.equals("userdebug");
+        return false;
     }
 
     @Override
     public boolean isUserBuild() {
-        return Build.TYPE.equals("user");
+        return false;
     }
 }
